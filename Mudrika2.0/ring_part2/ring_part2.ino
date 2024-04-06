@@ -3,9 +3,9 @@
 #include <ESP32Servo.h>
 
 //Define LED and button pins
-const char* ssid = "Airtel_EMPIRE 3";
-const char* password = "Empire@2019";
-const char* server_address = "192.168.1.17"; // Replace with your laptop's IP address
+const char* ssid = "Wifi network SSID";
+const char* password = "Wifi Password";
+const char* server_address = "Wifi IPv4 Address"; // Replace with your laptop's IP address
 const int port = 8080; // Replace with the port used by your Python script
 const int buttonPin = 13;
 const int servoPin =12;
