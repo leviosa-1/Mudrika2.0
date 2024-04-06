@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 # Define the coordinates
 coordinates = "22.693159,75.863516"
 # Replace 'your_api_key' with your actual API key
-api_key = "473747783904835582000x6617"
+api_key = "Enter your geocode.xyz API"
 
 # Define the parameters
 params = {
