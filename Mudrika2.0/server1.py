@@ -1,7 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from twilio.rest import Client
 import importlib
-HOST = '192.168.1.17'
+HOST = 'IPv4 Network'
 PORT = 8080
 
 class MyHandler(BaseHTTPRequestHandler):
@@ -22,11 +22,11 @@ class MyHandler(BaseHTTPRequestHandler):
         self.wfile.write("Data received and processed successfully!".encode())
 
 def send_sms(data):
-    account_sid = "AC091ddcdbd3f3a86db5c7ab71145435fe"
-    auth_token = "6c9750c149dbe1580668098e140f319a"
+    account_sid = "Twillio account_sid"
+    auth_token = "Twillio auth_token"
     client = Client(account_sid, auth_token)
-    to_number = "+917024896018"
-    from_number = "+16592518494"
+    to_number = "receiver's phone number with code "
+    from_number = "Twillio phone number "
     message_body = f"Alert! Someone needs your help at Location: {data}"
     message = client.messages.create(
         body=message_body,
