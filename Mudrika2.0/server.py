@@ -1,7 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import importlib
 
-HOST = '192.168.207.168'  # Standard loopback interface address (localhost)
+HOST = 'IPV4 network address'  # Standard loopback interface address (localhost)
 PORT = 8080        # Port to listen on (non-privileged ports are > 1023)
 
 class MyHandler(BaseHTTPRequestHandler):
